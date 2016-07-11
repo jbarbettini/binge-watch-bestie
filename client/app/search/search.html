@@ -1,0 +1,14 @@
+<div id='container'>
+  <form name="searchForm" ng-submit="search(searchQuery)">
+      <input class='text' type='text' name='search' ng-model="searchQuery">
+      <input type='submit' value='search'>
+  </form>
+  <div class='results' >
+    <div class='indiv-result' ng-repeat="result in results"> 
+      <img ng-src="{{result.image}}" alt="image"/>
+      {{result.title}}
+      {{result.id}}s
+      {{result.sources}}
+    </div>
+  </div>
+</div>
