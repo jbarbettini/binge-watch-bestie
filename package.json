@@ -1,0 +1,27 @@
+{
+  "name": "binge-watch-bestie",
+  "version": "1.0.0",
+  "description": "the fastest way to lose track of time from your couch",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/server.js"
+  },
+  "author": "Jennifer Ong",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "browser-sync": "^2.13.0",
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-nodemon": "^2.1.0",
+    "mongoose": "^4.5.3",
+    "nodemon": "^1.9.2",
+    "request": "^2.73.0"
+  },
+  "devDependencies": {
+    "proxy-middleware": "^0.15.0",
+    "url": "^0.11.0"
+  }
+}
