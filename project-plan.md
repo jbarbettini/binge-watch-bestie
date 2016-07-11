@@ -1,4 +1,4 @@
-# Netflix and Chill 
+# Binge Watch Bestie
 
 ## Functionality
 
