@@ -90,4 +90,9 @@ Files:
       userModel.js
 
 
+Remaining To-Dos 
+- look up shows 
+- print data as images 
+- save movie list 
+
 

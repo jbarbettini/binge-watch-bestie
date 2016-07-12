@@ -5,7 +5,8 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var User = require('./users/user');
 var userController = require('./users/userController');
-var searchController = require('./search/searchController');
+var searchMovieController = require('./search/searchMovieController');
+var searchShowController = require('./search/searchShowController');
 
 var port = 8080;   
 
@@ -39,7 +40,8 @@ router.get('/hello', function(req, res) {
 });
 
 // Site Routes 
-router.get('/search', searchController.search);
+router.get('/movieSearch', searchMovieController.search);
+router.get('/showSearch', searchShowController.search);
 router.get('/login')
 app.post('/api/users/signin', userController.signin);
 app.post('/api/users/signup', userController.signup);
