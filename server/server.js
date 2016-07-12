@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express(); 
+var expressPromiseRouter = require("express-promise-router");
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var User = require('./users/user');
@@ -21,7 +22,7 @@ db.once('open', function() {
 });
 
 //// Express Server Initialization 
-var router = express.Router(); 
+var router = expressPromiseRouter();
 
 router.use(function(req, res, next) {
   console.log('Express server starting...');
