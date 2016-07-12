@@ -13,9 +13,13 @@
 <div class="results" >
   <div class="indiv-result" ng-repeat="result in results"> 
     <img ng-src="{{result.image}}" alt="image"/>
-    {{result.title}}
-    {{result.id}}
-    {{result.sources}}
+    <div class="details">
+      {{result.title}}
+      {{result.id}}
+      {{result.sources}}
+    </div>
+    <md-button class="md-fab">
+      <md-icon class="fa fa-heart-o"></icon>
+    </md-button>
   </div>
 </div>
-

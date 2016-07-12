@@ -3,7 +3,9 @@ angular.module('bingeWatch', [
   'bingeWatch.services',
   'bingeWatch.search',
   'bingeWatch.login',
-  'ngRoute'])
+  'ngMaterial',
+  'ngRoute'
+  ])
 
 .config(function ($routeProvider, $httpProvider) {
   $routeProvider
