@@ -4,26 +4,6 @@ var Promise = require('bluebird');
 
 var baseUrl = 'https://api-public.guidebox.com/v1.43/US/' + config.apiKey + '/search/movie/title/';
 
-
-// var search = function(req, res) {
-//   var searchQuery = tripleEncode(req.query.s);
-//   request(baseUrl + searchQuery, function(error, response, body) {
-//     if (error) {
-//       return error;
-//     }
-//     var resultsObj = JSON.parse(body); 
-//     res.json(resultsObj.results.map(function(result) {
-//       return {
-//         id: result.id,
-//         title: result.title,
-//         // image: result.poster_120x171
-//         image: result.artwork_208x117
-//         // sources: addContent(result.id)
-//       }
-//     }));
-//   })
-// };
-
 var search = function(req, res) {
   var searchQuery = tripleEncode(req.query.s); 
 

@@ -11,7 +11,6 @@ var store = function(req, res) {
   listItem.id = req.body.id;
   listItem.type = req.body.type;  
 
-  // save the bear and check for errors
   listItem.save(function(err) {
     if (err) {
       res.send(err);
@@ -19,8 +18,6 @@ var store = function(req, res) {
     res.sendStatus(201);
   });
 };
-
-
 
 var getList = function(req, res) {
   List.find(function(err, listItems) {

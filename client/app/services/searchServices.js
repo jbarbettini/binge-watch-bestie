@@ -11,9 +11,14 @@ angular.module('bingeWatch.services', [])
       return resp.data;
     });
   }
+  var storeInList = function(id, type) {
+    return $http.post('api/watchList', { "id": id, "type": type }).then(function(resp) {
+      return resp.data;
+    });
+  }
   return {
     getMovieResults: getMovieResults, 
-    getShowResults: getShowResults
+    getShowResults: getShowResults,
+    storeInList: storeInList
   }
-
 });
