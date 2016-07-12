@@ -1,8 +1,8 @@
 <div class="background">
   <form name="searchForm" ng-submit="search(searchQuery, searchType)">
       <div> 
-        <input type="radio" ng-model="searchType" value="show"> Show
-        <input type="radio" ng-model="searchType" value="movie"> Movie
+        <input class="option" type="radio" ng-model="searchType" value="show"> Show
+        <input class="option" type="radio" ng-model="searchType" value="movie"> Movie 
       </div>
       <div>
         <input class='text' type='text' name='search' ng-model="searchQuery">

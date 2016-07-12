@@ -4,23 +4,21 @@
     <meta charset="utf-8" />
     <title>Binge Watch Bestie</title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <div class="background"> 
-      <h1> Binge Watch Bestie </h1>
       <div>
-        <div>
-          <ul>
-            <li><a href="#/users" class="user">Users</a></li>
-            <li><a href="#/search" class="search">Search</a></li>
-          </ul>
-        </div>
+        <ul>
+          <li><a href="#/users" class="user">Users</a></li>
+          <li><a href="#/search" class="search">Search</a></li>
+        </ul>
+      </div>
+      <h1> Binge Watch Bestie </h1>
       </div>
     </div>
 
-    <div ng-view></div>
+    <div class="background" ng-view></div>
 
     <script src="lib/angular/angular.js"></script>
     <script src="lib/angular-route/angular-route.js"></script>

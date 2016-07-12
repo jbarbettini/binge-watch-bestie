@@ -2,8 +2,9 @@ var express = require('express');
 var app = express(); 
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
-var User = require('./models/user');
-var searchController = require('./controllers/searchController');
+var User = require('./users/user');
+var userController = require('./users/userController');
+var searchController = require('./search/searchController');
 
 var port = 8080;   
 
@@ -38,6 +39,9 @@ router.get('/hello', function(req, res) {
 
 // Site Routes 
 router.get('/search', searchController.search);
+router.get('/login')
+app.post('/api/users/signin', userController.signin);
+app.post('/api/users/signup', userController.signup);
 
 app.listen(port);
 console.log('Magic happening on port ' + port);

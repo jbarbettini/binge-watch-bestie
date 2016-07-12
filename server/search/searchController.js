@@ -1,4 +1,5 @@
 var request = require('request');
+var Promise = require('bluebird');
 
 var baseUrl = 'https://api-public.guidebox.com/v1.43/US/rKGzUe0SOmAFla2ZBqbiICJMemzfxwhJ/search/title/';
 
@@ -21,6 +22,21 @@ var search = function(req, res) {
       }
     }));
   })
+};
+
+var searchPromise = function(req, res) {
+  var searchQuery = tripleEncode(req.query.s); 
+  return new Promise(function(resolve, reject) {
+    request.get(baseUrl + searchQuery, function(error, response, body) {
+      if (err) {
+        return reject(err); 
+      }
+      resolve(JSON.parse(body));
+    });
+  })
+  .then(function(body) {
+    request.get()
+  });
 };
 
 var tripleEncode = function(query) {
