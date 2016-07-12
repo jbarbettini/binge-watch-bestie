@@ -1,11 +1,10 @@
-// angular.module('shortly.links', [])
+angular.module('bingeWatch.watchList', [])
 
-// .controller('LinksController', [function ($scope, Links) {
-//   $scope.data = {};
-//   Links.getAll().then(function(links) {
-
-//     $scope.data.links = links;
-
-//   });
-
-// }]);
+.controller('ListController', function ($scope, SearchService) {
+  // $scope.results = [];
+  
+  SearchService.getList().then(function(result) {
+    console.log(result);
+    $scope.results = result;
+  });
+});

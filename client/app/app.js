@@ -1,8 +1,7 @@
 angular.module('bingeWatch', [
-  // 'bingeWatch.users',
   'bingeWatch.services',
   'bingeWatch.search',
-  'bingeWatch.login',
+  'bingeWatch.watchList',
   'ngMaterial',
   'ngRoute'
   ])

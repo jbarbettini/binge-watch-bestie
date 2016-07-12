@@ -1,13 +1,9 @@
-<!-- <div id='container'>
-  <input class="search" placeholder="filter your links" ng-model="filterText">
-    <div class="link">
-    <div class='info'>
-      <img src="https://s3-eu-west-1.amazonaws.com/omnibuilder/00e06739-fa0a-4a50-9dd9-29d44d03b526/03fa009d-d275-4ded-9c1c-c51ab51615ca.png">
-      <div class='visits'><span class='count'>{{link.visits}}</span>Visits</div>
-      <div class='title'>{{link.title}}</div>
-      <div class='original'>{{link.url}}</div>
-      <a href='{{link.baseUrl}}/{{link.code}}'>{{link.baseUrl}}/{{link.code}}</a>
+<div class="watchList" >
+  <div class="indiv-list" ng-repeat="list in lists"> 
+    <img ng-src="{{list.image}}" alt="image"/>
+    <div class="details">
+      <h2> {{list.title}} </h2>
+      <p> {{list.overview}} </p>
     </div>
   </div>
 </div>
- -->
