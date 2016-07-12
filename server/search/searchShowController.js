@@ -44,6 +44,7 @@ var search = function(req, res) {
   }).then(function(showDetails) {
     res.json(showDetails.map(function(show) {
       return {
+        id: show.id,
         title: show.title,
         overview: show.overview,
         image: show.artwork_208x117,

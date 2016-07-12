@@ -44,6 +44,7 @@ var search = function(req, res) {
   }).then(function(moviesDetails) {
     res.json(moviesDetails.map(function(movie) {
       return {
+        id: movie.id,
         title: movie.title,
         overview: movie.overview,
         image: movie.poster_120x171, 

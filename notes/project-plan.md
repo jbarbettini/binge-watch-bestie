@@ -91,8 +91,9 @@ Files:
 
 
 Remaining To-Dos 
-- look up shows 
-- print data as images 
-- save movie list 
+- print data to page 
+- manipulate show data to render to page correctly
+- style 
+- save as a movie list 
 
 
