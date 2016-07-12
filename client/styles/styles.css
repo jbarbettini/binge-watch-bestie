@@ -1,15 +1,24 @@
+*,
+:before,
+:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: 'Open-Sans';
+  font-family: 'Open-Sans';
   color: #eee;
 }
 
 body{
   margin: 0;
 }
+
 h1 {
   font-family: 'Open Sans';
   font-size: 49px;
@@ -24,27 +33,62 @@ h1 {
   margin: auto;
   background-color: #222831;
 }
+
 p {
-    font-family: 'Open Sans';
-    font-size: 18px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 300;
-    line-height: 20px;
-    text-align: left;
-    color: white;
-  }
-a {
   font-family: 'Open Sans';
   font-size: 18px;
-  font-style: underline;
+  font-style: normal;
   font-variant: normal;
   font-weight: 300;
   line-height: 20px;
   text-align: left;
   color: white;
 }
-button {
+
+a {
+  font-family: 'Open Sans';
+  font-size: 18px;
+  font-variant: normal;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Open-Sans';
+  font-size: 18px;
+  padding: 20px 20px 50px 20px;
+}
+
+.toggle-selection {
+  font-family: 'Open-Sans';
+  font-size: 18px;
+  margin: auto;
+}
+
+.text {
+  background-color: #eee;
+  border: 1px solid #FFF;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  padding: 5px 40px 5px 40px;
+  display: block;
+  margin: 20px auto 20px auto;
+  width: 60%;
+}
+
+.submit {
   color: white;
   border: 1px solid #FFF;
   font-size: 18px;
@@ -57,26 +101,12 @@ button {
   margin: auto;
   background-color: #222831;
 }
-button:hover {
-  background: transparent;
+.submit:hover {
+  background: rgba(255,255,255, 0.3);
 }
-button:focus {
+.submit:focus {
   background: rgba(255,255,255, 0.2);
 }
-input {
-  background-color: #eee;
-  border: 1px solid #FFF;
-  font-size: 20px;
-  text-transform: uppercase;
-  text-align: center;
-  font-family: 'Open Sans';
-  font-weight: 300;
-  padding: 5px 40px 5px 40px;
-  display: block;
-  margin: 20px auto 20px auto;
-  width: 60%;
-}
-
 
 .background {
   background-color: #222831;
@@ -85,15 +115,8 @@ input {
 .results {
   background-color: white;
 }
+
 .indiv-result {
   color: black;
   margin: 15px auto;
-}
-
-.select {
-  font-family: 'Open-Sans';
-}
-
-.logout {
-  float: right;
 }

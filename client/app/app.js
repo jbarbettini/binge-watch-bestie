@@ -7,20 +7,12 @@ angular.module('bingeWatch', [
 
 .config(function ($routeProvider, $httpProvider) {
   $routeProvider
-    .when('/users', {
-      templateUrl: 'app/users/users.html',
-      controller: 'UsersController'
+    .when('/watchList', {
+      templateUrl: 'app/watchList/list.html',
+      controller: 'ListController'
     })
     .when('/search', {
       templateUrl: 'app/search/search.html', 
       controller: "SearchController"
-    })
-    .when('/signin', {
-      templateUrl: 'app/login/signin.html',
-      controller: 'LoginController'
-    })
-    .when('/signup', {
-      templateUrl: 'app/login/signup.html',
-      controller: 'LoginController'
     })
 })
