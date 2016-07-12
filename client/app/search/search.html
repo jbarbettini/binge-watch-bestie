@@ -1,14 +1,21 @@
-<div id='container'>
-  <form name="searchForm" ng-submit="search(searchQuery)">
-      <input class='text' type='text' name='search' ng-model="searchQuery">
-      <input type='submit' value='search'>
+<div class="background">
+  <form name="searchForm" ng-submit="search(searchQuery, searchType)">
+      <div> 
+        <input type="radio" ng-model="searchType" value="show"> Show
+        <input type="radio" ng-model="searchType" value="movie"> Movie
+      </div>
+      <div>
+        <input class='text' type='text' name='search' ng-model="searchQuery">
+        <input type='submit' value='Show Me Where To Find It'>
+      </div>
   </form>
-  <div class='results' >
-    <div class='indiv-result' ng-repeat="result in results"> 
-      <img ng-src="{{result.image}}" alt="image"/>
-      {{result.title}}
-      {{result.id}}s
-      {{result.sources}}
-    </div>
+</div>
+<div class="results" >
+  <div class="indiv-result" ng-repeat="result in results"> 
+    <img ng-src="{{result.image}}" alt="image"/>
+    {{result.title}}
+    {{result.id}}
+    {{result.sources}}
   </div>
 </div>
+

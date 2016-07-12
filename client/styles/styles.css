@@ -1,0 +1,125 @@
+  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: 'Open-Sans';
+    color: #eee;
+  }
+
+body{
+  margin: 0;
+}
+h1 {
+  font-family: 'Open Sans';
+  font-size: 49px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  vertical-align: middle;
+  margin: 0px auto 30px auto;
+}
+h2 {
+  font-family: 'Open Sans';
+  font-size: 26px;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 300;
+  line-height: 49px;
+  text-align: center;
+  color: white;
+  margin: 20px auto;
+}
+h3 {
+  font-family: 'Open Sans';
+  font-size: 26px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+  line-height: 26px;
+  text-align: center;
+  color: white;
+  margin: 20px auto;
+}
+h4 {
+  font-family: 'Open Sans';
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: left;
+  margin: 20px 200px 20px 200px;
+  color: white;
+}
+p {
+  font-family: 'Open Sans';
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+  margin: 20px 10px 20px 10px;
+  color: white;
+}
+strong {
+  font-weight: 600;
+}
+a {
+  font-family: 'Open Sans';
+  font-size: 18px;
+  font-style: underline;
+  font-variant: normal;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+  color: white;
+}
+button {
+  color: white;
+  border: 1px solid #FFF;
+  font-size: 22px;
+  text-transform: lowercase;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  letter-spacing: 2px;
+  padding: 5px 40px 5px 40px;
+  display: block;
+  margin: auto;
+}
+button:hover {
+  background: rgba(255,255,255, 0.2);
+}
+button:focus {
+  background: rgba(255,255,255, 0.2);
+}
+input{
+  background-color: transparent;
+  color: white;
+  border: 1px solid #FFF;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  padding: 5px 40px 5px 40px;
+  display: block;
+  margin: 20px auto 20px auto;
+  width: 60%;
+}
+.background {
+  background-color: #222831;
+}
+
+.results {
+  background-color: white;
+}
+.indiv-result {
+  color: black;
+  margin: 15px auto;
+}

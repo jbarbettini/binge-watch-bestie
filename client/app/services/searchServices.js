@@ -1,12 +1,19 @@
 angular.module('bingeWatch.services', [])
 
 .factory('SearchService', function($http) {
-  var getResults = function(searchQuery) {
+  var getMovieResults = function(searchQuery) {
+    return $http.get('/api/search?s=' + searchQuery).then(function(resp) {
+      return resp.data;
+    });
+  }
+  var getShowResults = function(searchQuery) {
     return $http.get('/api/search?s=' + searchQuery).then(function(resp) {
       return resp.data;
     });
   }
   return {
-    getResults: getResults
+    getMovieResults: getMovieResults, 
+    getShowResults: getShowResults
   }
+
 });
