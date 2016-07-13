@@ -1,9 +1,9 @@
 <div class="watchList" >
-  <div class="indiv-list" ng-repeat="list in lists"> 
-    <img ng-src="{{list.image}}" alt="image"/>
+  <div class="indiv-result" ng-repeat="result in listResults"> 
+    <img ng-src="{{result.image}}" alt="image"/>
     <div class="details">
-      <h2> {{list.title}} </h2>
-      <p> {{list.overview}} </p>
+      <h2> {{result.title}} </h2>
+      <p> {{result.overview}} </p>
     </div>
   </div>
 </div>

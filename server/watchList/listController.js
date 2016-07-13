@@ -35,7 +35,14 @@ var getList = function(req, res) {
       }
       return rp(options);
     }).then(function(details) {
-      res.json(details);
+      res.json(details.map(function(show) {
+      return {
+        id: show.id,
+        title: show.title,
+        overview: show.overview,
+        image: show.artwork_304x171 || show.poster_240x342
+      }
+    }));
     });
   });
 }
