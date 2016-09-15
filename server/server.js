@@ -35,7 +35,7 @@ router.use(function(req, res, next) {
 
 // test route to make sure everything is working (accessed at GET http://localhost:8080/api)
 router.get('/hello', function(req, res) {
-  res.send('hello world');   
+  res.send('hello world!');   
 });
 
 // Site Routes 

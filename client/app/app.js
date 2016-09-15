@@ -16,4 +16,7 @@ angular.module('bingeWatch', [
       templateUrl: 'app/search/search.html', 
       controller: "SearchController"
     })
+    .otherwise({
+      redirectTo: '/search'
+    });
 })
